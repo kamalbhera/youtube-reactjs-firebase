@@ -1,0 +1,57 @@
+.playlistsContainer {
+    width: 100%;
+    header {
+      padding-top: 20px;
+      background-color: var(--bg-color);
+      color: #f50057;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .MuiTab-root,
+  .cont {
+    padding: 0;
+    overflow: auto;
+    font-size: inherit;
+    max-width: none;
+    text-align: left;
+    line-height: initial;
+    white-space: initial;
+    letter-spacing: initial;
+    text-transform: initial;
+    font-weight: initial;
+    color: var(--bg-color-32);
+  }
+  
+  .welcomeText span {
+    color: var(--t-color);
+    text-align: center;
+  }
+  
+  .playlistName {
+    font-weight: 700;
+    margin: 10px;
+  }
+  
+  .emptyPage {
+    margin: 100px auto;
+    width: 600px;
+    color: var(--font-color);
+    text-align: center;
+    > svg {
+      margin-top: 30px;
+      width: 120px;
+      height: 120px;
+    }
+    > h2 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+  
+    .signIn {
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }

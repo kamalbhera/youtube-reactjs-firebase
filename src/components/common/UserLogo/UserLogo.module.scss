@@ -1,0 +1,22 @@
+.userPic {
+  box-sizing: border-box;
+  display: flex;
+  width: 35px;
+  margin-right: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.userLetter {
+  background-color: rgb(255, 166, 0);
+  color: black;
+  box-sizing: border-box;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 20px;
+}

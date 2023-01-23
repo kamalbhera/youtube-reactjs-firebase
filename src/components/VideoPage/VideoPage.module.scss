@@ -1,0 +1,292 @@
+$main-color: var(--font-color);
+$main-size: 18px;
+.videoContainer,
+.notActive {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+
+  .video {
+    > video {
+      outline: none;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .infoContainer {
+    border-bottom: 0.5px solid #e6e6e6;
+    padding-bottom: 10px;
+  }
+
+  .views {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--g-color);
+  }
+
+  .title {
+    color: var(--t-color);
+    font-size: $main-size;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .hashtags {
+    color: var(--b-color);
+    font: size 12px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .userLogo {
+    text-decoration: none;
+    color: var(--t-color);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+
+  .videoInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--t-color);
+    margin-top: 10px;
+  }
+
+  .videoInfo div {
+    display: flex;
+    align-items: center;
+  }
+
+  .subscribe {
+    background: #cc0000;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    &:hover {
+      background: rgb(250, 32, 32);
+    }
+  }
+
+  .unsubscribe {
+    background: var(--bg-color-32);
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .addCommentContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .commentsContainer {
+    width: 640px;
+  }
+
+  .userName {
+    font-size: $main-size;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+
+  .comment {
+    color: $main-color;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .someComment {
+    position: relative;
+    margin: 20px 0;
+  }
+  :global(.MuiInputBase-root.MuiInput-root.MuiInput-underline) {
+    margin-right: 19px;
+  }
+
+  .userLetter {
+    justify-content: flex-end;
+  }
+
+  .input {
+    width: 584px;
+    margin: 20px;
+  }
+
+  .input input,
+  .addFirstComment {
+    color: $main-color;
+  }
+
+  .addFirstComment {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .mainComm {
+    display: flex;
+    align-items: center;
+  }
+
+  .userLogo {
+    color: $main-color;
+    background-color: cornflowerblue;
+    box-sizing: border-box;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    .userPic {
+      width: 100%;
+    }
+  }
+
+  .likesContainer {
+    display: flex;
+    justify-content: space-between;
+    color: $main-color;
+    margin-top: 10px;
+    align-items: center;
+    .thumbs {
+      display: flex;
+      align-items: center;
+      .button,
+      .liked,
+      .disliked {
+        color: #909090;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        margin-left: 20px;
+      }
+      .liked,
+      .disliked {
+        color: rgb(62, 166, 255);
+      }
+    }
+  }
+}
+
+.messageContainer {
+  opacity: 0.8;
+  // background: #333;
+  color: $main-color;
+
+  .info {
+    padding: 10px 0;
+    border-bottom: 1px solid $main-color;
+  }
+
+  .signin {
+    cursor: pointer;
+    color: rgb(62, 166, 255);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+}
+
+.notActive {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.otherVideos {
+  margin-top: 50px;
+  > h2 {
+    color: var(--bg-color-32);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 15px;
+  }
+}
+
+.opened {
+  display: flex;
+}
+
+.closed {
+  display: none;
+}
+
+.container {
+  margin-top: 70px;
+  color: var(--font-color);
+}
+
+.timeContainer {
+  display: flex;
+}
+
+.time {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.numberComments {
+  color: var(--t-color);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0 0 5px;
+  border-top: 1px solid #e6e6e6;
+  margin-top: 20px;
+}
+
+.editCommentContainer {
+  display: flex;
+  > button {
+    background: rgb(62, 166, 255);
+    width: 24px;
+    font-size: 12px;
+  }
+  > div > input {
+    color: #909090;
+  }
+}
+
+.editContainer {
+  color: #909090;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainContainer {
+    width: auto;
+    text-align: center;
+  }
+  .video video {
+    width: 200px;
+    /* height: 360px; */
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .mainContainer {
+    flex-direction: column;
+    width: 300px;
+  }
+}

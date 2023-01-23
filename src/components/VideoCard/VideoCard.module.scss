@@ -1,0 +1,54 @@
+.container {
+  margin: 30px 30px 0 30px;
+  cursor: pointer;
+  position: relative;
+  width: 300px;
+  max-width: 300px;
+  text-align: center;
+  .video {
+    max-height: 170px;
+    max-width: 300px;
+  }
+}
+
+.duration {
+  position: absolute;
+  top: 146px;
+  right: 3px;
+  background-color: #180f0a;
+  color: #c0c0c1;
+  padding: 4px 3px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.videoInfoContainer {
+  display: flex;
+  margin: 5px;
+
+  .videoInfo {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    align-items: baseline;
+    .title {
+      color: var(--tit-color);
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .views {
+      color: var(--font-color);
+    }
+
+    .authorName {
+      color: grey;
+    }
+  }
+}

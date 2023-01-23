@@ -1,0 +1,16 @@
+.links {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.signIn {
+  display: flex;
+  align-items: center;
+  border: 1px solid #3ea6ff;
+  color: #3ea6ff;
+  border-radius: 2px;
+  width: 85px;
+  padding: 5px 8px;
+  cursor: pointer;
+  justify-content: space-between;
+}

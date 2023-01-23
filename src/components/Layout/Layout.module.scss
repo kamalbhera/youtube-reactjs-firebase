@@ -1,0 +1,40 @@
+.sideBarContainer {
+  background: var(--bg-color-32);
+  position: fixed;
+  top: 56px;
+  z-index: 1;
+  height: 100%;
+}
+
+.mainContainer {
+  display: flex;
+}
+
+.sidebars {
+  display: block;
+  color: var(--header-color);
+  font-size: 16px;
+  font-weight: 600;
+  height: 44px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 10px 10px 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    color: grey;
+  }
+  > p {
+    margin-top: 5px;
+  }
+}
+
+.homeContainer {
+  margin-top: 56px;
+  width: 100%;
+}
+
+.videosContainer {
+  width: 90%;
+}

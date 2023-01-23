@@ -1,0 +1,43 @@
+.videoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 92%;
+  margin-left: 110px;
+}
+
+.welcomeText {
+  padding-left: 100px;
+  margin-top: 20px;
+  color: var(--t-color);
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.emptyPage {
+  margin: 100px auto;
+  width: 600px;
+  color: var(--font-color);
+  text-align: center;
+  > svg {
+    margin-top: 30px;
+    width: 120px;
+    height: 120px;
+  }
+  > h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  .signIn {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+
+#noSearchResImg {
+  width: 100%;
+}

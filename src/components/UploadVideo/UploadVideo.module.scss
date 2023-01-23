@@ -1,0 +1,54 @@
+.mainContainer {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #c7c4c4;
+  width: 500px;
+  padding: 20px 0 20px 0;
+  margin-top: 50px;
+  border-radius: 4px;
+  .uploadContainer {
+    margin: 0 auto;
+    width: 300px;
+    height: 150px;
+    background: azure;
+    border-radius: 50%;
+    color: #3f51b5;
+    margin-bottom: 10px;
+    padding-top: 150px;
+    outline: none;
+  }
+
+  .welcomeText {
+    margin-bottom: 20px;
+    color: black;
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  #logo {
+    width: 120px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .mainContainer button {
+    margin-top: 10px;
+  }
+
+  .fileInfo {
+    margin: 10px 0;
+  }
+
+  .inputs {
+    margin: 15px;
+    .input {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .mainContainer {
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.errorContainer {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10%;
+  > p {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .errorContainer input {
+    outline: none;
+  }
+
+  .errorContainer div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .link {
+    cursor: pointer;
+    color: rgb(37, 93, 245);
+  }
+}

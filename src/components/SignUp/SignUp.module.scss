@@ -1,0 +1,92 @@
+$flex: flex;
+.signUp {
+  margin: 0 auto;
+  width: 400px;
+  margin-top: 100px;
+  border: 1px solid white;
+  padding: 30px 20px 40px 20px;
+  border-radius: 4px;
+  background-color: #c7c4c4;
+  text-align: center;
+  #logo {
+    width: 100px;
+    margin: 20px 0 10px 0;
+    cursor: pointer;
+  }
+
+  .welcomeText {
+    margin: 5px;
+    color: black;
+
+    > h2 {
+      font-weight: 400;
+      font-size: 22px;
+    }
+
+    > p {
+      font-size: 16px;
+      margin: 10px 0 30px 0;
+    }
+  }
+
+  .container,
+  .button,
+  .buttons {
+    display: $flex;
+  }
+
+  .container {
+    justify-content: space-between;
+    width: 100%;
+    // margin: 5px;
+    margin-bottom: 0;
+    color: white;
+    .inputs {
+      width: 50%;
+      margin: 5px;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+    color: #001abf;
+    width: inherit;
+    text-align: start;
+  }
+
+  .button {
+    justify-content: flex-end;
+    width: 420px;
+  }
+
+  .buttons {
+    width: 88%;
+    margin: 0 auto 30px auto;
+    align-items: center;
+  }
+
+  .inputs {
+    width: 48%;
+  }
+
+  .emailContainer {
+    width: 100%;
+    .emailInput {
+      margin: 5px;
+      width: 98%;
+    }
+  }
+
+  #info {
+    margin: 0 0 10px 15px;
+    font-size: 12px;
+    text-align: start;
+    color: red;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .signUp {
+      width: auto;
+    }
+  }
+}

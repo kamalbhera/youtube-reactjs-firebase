@@ -1,0 +1,66 @@
+{
+  "name": "youtube",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@alan-ai/alan-sdk-web": "^1.8.25",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.3",
+    "cors": "^2.8.5",
+    "firebase": "^8.3.1",
+    "material-ui-popup-state": "^1.8.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.2",
+    "react-dragable": "0.0.4-1",
+    "react-dropzone": "^11.3.1",
+    "react-dropzone-uploader": "^2.11.0",
+    "react-horizontal-scrolling-menu": "^0.7.10",
+    "react-hover-video-player": "^7.3.0",
+    "react-infinite-scroll-component": "^6.0.0",
+    "react-player": "^2.9.0",
+    "react-redux": "^7.2.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-speech-recognition": "^3.7.0",
+    "react-time-ago": "^6.2.2",
+    "react-uuid": "^1.0.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.32.8",
+    "styled-components": "^5.2.2",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}

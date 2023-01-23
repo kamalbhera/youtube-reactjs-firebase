@@ -1,0 +1,36 @@
+.listening,
+.notListening {
+  z-index: 20;
+  position: absolute;
+  color: var(--bg-color-32);
+  bottom: 20px;
+  position: fixed;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: rgb(212, 105, 105);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: rgb(189, 57, 57);
+  }
+}
+
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.listening {
+  text-decoration: blink;
+  animation: blinker 5s infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}

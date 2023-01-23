@@ -1,0 +1,92 @@
+$main-color: var(--tit-color);
+
+.mainLogoContainer {
+  margin-left: 4px;
+  display: flex;
+  width: 185px;
+  cursor: pointer;
+}
+
+.sandwichButton {
+  &:hover {
+    cursor: pointer;
+    color: grey;
+  }
+}
+
+.siteLogo {
+  width: 100%;
+  height: fit-content;
+  align-self: center;
+}
+
+.logo {
+  margin-left: 20px;
+  width: 85px;
+  display: flex;
+  cursor: pointer;
+}
+
+.openLogo {
+  padding: 16px;
+}
+
+.countryCode {
+  color: var(--font-color);
+  font-size: 10px;
+  margin: 0 -12px 0 2px;
+  font-weight: 500;
+}
+
+.sidebars:hover,
+.open:hover {
+  color: grey;
+}
+
+.sidebars {
+  display: flex;
+  color: var(--header-color);
+  font-weight: 600;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 5px;
+  margin-left: 10px;
+  justify-content: flex-start;
+  text-decoration: none;
+  &:hover {
+    color: grey;
+  }
+  > svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+  > p {
+    font-size: 18px;
+  }
+}
+
+.MuiSvgIcon-root {
+  color: grey;
+}
+
+.sideOpen {
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  color: var(--header-color);
+  cursor: pointer;
+}
+
+:global(.MuiPaper-root.MuiDrawer-paper) {
+  background: var(--bg-color-32);
+}
+
+@media only screen and (max-width: 650px) {
+  .sidebars {
+    display: none;
+  }
+}
